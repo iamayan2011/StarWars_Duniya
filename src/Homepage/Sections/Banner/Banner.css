@@ -1,0 +1,61 @@
+.bannerparent {
+    background-image: url('../../../images/bg.jpg');
+    object-fit: fill;
+    width: auto;
+    line-height: 1;
+    height: max-content;
+    min-height: 100vh;
+    background-size: cover;
+
+    
+}
+
+.headingban{
+
+    font-size: 98px;
+    font-weight: 900;
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range-start: cover ;
+    animation-range-end: cover;
+
+}
+
+.starwar{
+    color: orange;
+}
+
+.yoda {
+    animation: updown 3s linear infinite;
+    margin-top: 20%;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@media (width<600px) {
+    .headingban{
+
+        font-size: 14vw;
+        font-weight: 900;
+        animation: fade-out linear;
+        animation-timeline: view();
+        animation-range-end: cover;
+    
+    }
+
+    .yoda {
+        animation: updown 3s linear infinite;
+        width: 90%;
+    }
+    
+}

@@ -1,0 +1,55 @@
+.cardparent {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+}
+.card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  transition: 0.4s ease-out;
+  border-radius: 15px;
+  
+  overflow: hidden;
+}
+
+.cardi::before {
+  content: "";
+  background: linear-gradient(90.21deg, #000000 -5.91%, yellow 111.58%);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.cardi:hover::before {
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  border-radius: 30px;
+}
+
+.card11:hover{
+    
+    border-color: white;
+}
+
+.deshead {
+  font-weight: bold;
+}
+
+.cardhead {
+  font-weight: 800;
+}
+
+.cardimg {
+    height: 200px;
+    object-fit: cover;
+}

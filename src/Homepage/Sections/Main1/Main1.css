@@ -1,0 +1,17 @@
+.MuiPagination-text{
+    color: white !important;
+}
+
+.card21 {
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+    
+}
+
+.main1parent {
+    background-image: url("../../../images/stars.webp");
+    margin: 0;
+    background-size: cover;
+    padding-bottom: 40px;
+}
