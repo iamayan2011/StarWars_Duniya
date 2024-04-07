@@ -103,15 +103,15 @@ export default function Main1() {
 
 
   return (
-    <div className="main1parent">
+    <div className="main1parent" id="characters1">
       <div>
 
         <div style={{backgroundColor:"black"}}>
-          <marquee><div className="sechead">SPECIES</div></marquee>
+          <marquee><div className="sechead">CHARACTERS</div></marquee>
         </div>
 
         <div className="justify-content-center d-flex" style={{marginTop:"10%"}}>
-          <Button onClick={handleRefresh}>Refresh</Button>
+          <Button variant="warning" onClick={handleRefresh}>Refresh</Button>
         </div>
         {cards ? (
           <div className="d-flex row mt-0 m-4">

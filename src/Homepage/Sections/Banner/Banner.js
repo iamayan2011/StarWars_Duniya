@@ -5,7 +5,7 @@ import { Roll } from "react-awesome-reveal";
 
 export default function Banner() {
   return (
-    <div className="bannerparent container-fluid">
+    <div className="bannerparent container-fluid" id="home">
       <div className="d-flex row">
         <div className="d-flex col-12 col-xl-6 align-items-center justify-content-center">
           

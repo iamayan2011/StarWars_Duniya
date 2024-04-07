@@ -28,11 +28,11 @@ export default function NavBar() {
     })
   return (
    
-    <nav className='nav1'>
+    <nav className='nav1' id="nav">
      {['md'].map((expand) => (
         <Navbar key={expand} expand={expand} className={scrolled ? "scrolled": ""}>
           <Container fluid className='text-light'>
-            <Navbar.Brand href="#"><img src={logo} alt="" className='mainlogo'/></Navbar.Brand>
+            
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -45,22 +45,17 @@ export default function NavBar() {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-center flex-grow-1 pe-3 text-light">
-                  <Nav.Link className='text-light' style={{marginRight:"20px"}} href="#action1">Home</Nav.Link>
-                  <Nav.Link className='text-light' style={{marginRight:"20px"}} href="#action2">Link</Nav.Link>
+                <Nav className="justify-content-start flex-grow-1 pe-3 px-3 text-light">
+                  <Nav.Link className='text-light' style={{marginRight:"20px"}} href="#home">Home</Nav.Link>
+                  <Nav.Link className='text-light' style={{marginRight:"20px"}} href="#characters1">Characters</Nav.Link>
+                  <Nav.Link className='text-light' style={{marginRight:"20px"}} href="#home">Planets</Nav.Link>
+                  <Nav.Link className='text-light' style={{marginRight:"20px"}} href="#home">Characters</Nav.Link>
                   
                 </Nav>
-                <Form className="d-flex">
-                  <Form.Control
-                    type="search"
-                    placeholder="Search"
-                    className="me-2"
-                    aria-label="Search"
-                  />
-                  <Button variant="outline-warning">Search</Button>
-                </Form>
+                
               </Offcanvas.Body>
             </Navbar.Offcanvas>
+            <Navbar.Brand href="#home"><img src={logo} alt="" className='mainlogo'/></Navbar.Brand>
           </Container>
         </Navbar>
       ))}
