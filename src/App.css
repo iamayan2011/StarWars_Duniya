@@ -4,19 +4,32 @@
   color: white;
 }
 
+@keyframes updown {
+  0% {
+      transform: translateY(-20px);
+  }
+  50% {
+      transform: translateY(20px);
+  }
+  100% {
+      transform: translateY(-20px);
+  }
+}
+
 @keyframes fade-in {
 
-  from {scale: 0.8; opacity: 0;}
-  to {scale: 1; opacity: 1;}
+  0% {scale: 0.8; opacity: 0;}
+  100% {scale: 1; opacity: 1;}
   
 }
 
 @keyframes fade-out {
 
-  from {opacity: 1; scale:1}
-  to {opacity: 1 ; scale: 0.4}
+  0% {opacity: 1; scale:1}
+  100% {opacity: 1 ; scale: 0.4}
   
 }
+
 
 .sechead{
   font-size: 80px;
