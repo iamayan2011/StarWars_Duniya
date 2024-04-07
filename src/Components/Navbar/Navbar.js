@@ -49,7 +49,7 @@ export default function NavBar() {
                   <Nav.Link className='text-light' style={{marginRight:"20px"}} href="#home">Home</Nav.Link>
                   <Nav.Link className='text-light' style={{marginRight:"20px"}} href="#characters1">Characters</Nav.Link>
                   <Nav.Link className='text-light' style={{marginRight:"20px"}} href="#home">Planets</Nav.Link>
-                  <Nav.Link className='text-light' style={{marginRight:"20px"}} href="#home">Characters</Nav.Link>
+                  <Nav.Link className='text-light' style={{marginRight:"20px"}} href="#home">Species</Nav.Link>
                   
                 </Nav>
                 
