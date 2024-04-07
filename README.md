@@ -5,6 +5,10 @@ Star Wars Duniya is a React Web App. It fetches data from Star Wars API (SWAPI).
 
 This project was a part of the assesment component of a company and was done in a limited time. So, only characters were fetched and displayed as of now.
 
+![Full Page Screenshot](https://github.com/iamayan2011/StarWars_Duniya/blob/main/screenshots/ss1.png)
+
+
+
 
 The app has following features/operations:
 
@@ -15,6 +19,8 @@ The app has following features/operations:
 * Cards' color is based on the Species a particular character belong to. Colors are unique for each species and are not randomised (totally dependent on the species.)
 * Modal color is same as that of the Card color.
 * Animations.
+
+![Modal Screenshot](https://github.com/iamayan2011/StarWars_Duniya/blob/main/screenshots/ss2.png)
 
 
 
