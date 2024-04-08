@@ -30,8 +30,7 @@ export default function Main1() {
 
   const handleRefresh = () => {
     fetchcard();
-  }
-
+  };
 
   const fetchcard = async () => {
     setLoading(true);
@@ -79,12 +78,9 @@ export default function Main1() {
         responseprev = await responseprev.json();
         setCardsprev(responseprev.results);
       } else {
-        
       }
 
-      
-        setCards(response.results);
-     
+      setCards(response.results);
 
       const pagemax = Math.ceil(response.count / 10);
       setCountPage(pagemax);
@@ -101,17 +97,22 @@ export default function Main1() {
     });
   }, [currentpage]);
 
-
   return (
     <div className="main1parent" id="characters1">
       <div>
-
-        <div style={{backgroundColor:"black"}}>
-          <marquee><div className="sechead">CHARACTERS</div></marquee>
+        <div style={{ backgroundColor: "black" }}>
+          <marquee>
+            <div className="sechead">CHARACTERS</div>
+          </marquee>
         </div>
 
-        <div className="justify-content-center d-flex" style={{marginTop:"10%"}}>
-          <Button variant="warning" onClick={handleRefresh}>Refresh</Button>
+        <div
+          className="justify-content-center d-flex"
+          style={{ marginTop: "10%" }}
+        >
+          <Button variant="warning" onClick={handleRefresh}>
+            Refresh
+          </Button>
         </div>
         {cards ? (
           <div className="d-flex row mt-0 m-4">
@@ -123,8 +124,6 @@ export default function Main1() {
                   <Card1 item={d}></Card1>
                 </div>
               ))
-
-             
             )}
           </div>
         ) : (
